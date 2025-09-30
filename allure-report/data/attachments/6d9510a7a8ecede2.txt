@@ -1,0 +1,12 @@
+Entering value "Sample123"
+Entering value "User"
+Entering value "ABC street"
+Entering value "Kochi"
+Entering value "Kerala"
+Entering value "666888"
+Entering value "8989898989"
+Entering value "123456"
+Entering value "sampleuser"
+Entering value "Sample@123"
+Entering value "Sample@123"
+Clicking on button Register

@@ -1,0 +1,4 @@
+Entering value "sampleuser"
+sampleuser
+Entering value "Sample@123"
+Sample@123

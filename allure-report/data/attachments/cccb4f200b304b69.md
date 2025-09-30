@@ -1,0 +1,186 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - link:
+        - /url: admin.htm
+        - img [ref=e4] [cursor=pointer]
+      - link "ParaBank":
+        - /url: index.htm
+        - img "ParaBank" [ref=e5] [cursor=pointer]
+      - paragraph [ref=e6]: Experience the difference
+    - generic [ref=e7]:
+      - list [ref=e8]:
+        - listitem [ref=e9]: Solutions
+        - listitem [ref=e10]:
+          - link "About Us" [ref=e11] [cursor=pointer]:
+            - /url: about.htm
+        - listitem [ref=e12]:
+          - link "Services" [ref=e13] [cursor=pointer]:
+            - /url: services.htm
+        - listitem [ref=e14]:
+          - link "Products" [ref=e15] [cursor=pointer]:
+            - /url: http://www.parasoft.com/jsp/products.jsp
+        - listitem [ref=e16]:
+          - link "Locations" [ref=e17] [cursor=pointer]:
+            - /url: http://www.parasoft.com/jsp/pr/contacts.jsp
+        - listitem [ref=e18]:
+          - link "Admin Page" [ref=e19] [cursor=pointer]:
+            - /url: admin.htm
+      - list [ref=e20]:
+        - listitem [ref=e21]:
+          - link "home" [ref=e22] [cursor=pointer]:
+            - /url: index.htm
+        - listitem [ref=e23]:
+          - link "about" [ref=e24] [cursor=pointer]:
+            - /url: about.htm
+        - listitem [ref=e25]:
+          - link "contact" [ref=e26] [cursor=pointer]:
+            - /url: contact.htm
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - heading "Customer Login" [level=2] [ref=e29]
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - paragraph [ref=e32]:
+              - generic [ref=e33]: Username
+            - textbox [active] [ref=e35]
+            - paragraph [ref=e36]:
+              - generic [ref=e37]: Password
+            - textbox [ref=e39]
+            - button "Log In" [ref=e41] [cursor=pointer]
+          - paragraph [ref=e42]:
+            - link "Forgot login info?" [ref=e43] [cursor=pointer]:
+              - /url: lookup.htm
+          - paragraph [ref=e44]:
+            - link "Register" [ref=e45] [cursor=pointer]:
+              - /url: register.htm
+      - generic [ref=e46]:
+        - heading "Signing up is easy!" [level=1] [ref=e47]
+        - paragraph [ref=e48]: If you have an account with us you can sign-up for free instant online access. You will have to provide some personal information.
+        - table [ref=e50]:
+          - rowgroup [ref=e51]:
+            - 'row "First Name: First name is required." [ref=e52]':
+              - cell "First Name:" [ref=e53]:
+                - generic [ref=e54]: "First Name:"
+              - cell [ref=e55]:
+                - textbox [ref=e56]
+              - cell "First name is required." [ref=e57]:
+                - generic [ref=e58]: First name is required.
+            - 'row "Last Name: Last name is required." [ref=e59]':
+              - cell "Last Name:" [ref=e60]:
+                - generic [ref=e61]: "Last Name:"
+              - cell [ref=e62]:
+                - textbox [ref=e63]
+              - cell "Last name is required." [ref=e64]:
+                - generic [ref=e65]: Last name is required.
+            - 'row "Address: Address is required." [ref=e66]':
+              - cell "Address:" [ref=e67]:
+                - generic [ref=e68]: "Address:"
+              - cell [ref=e69]:
+                - textbox [ref=e70]
+              - cell "Address is required." [ref=e71]:
+                - generic [ref=e72]: Address is required.
+            - 'row "City: City is required." [ref=e73]':
+              - cell "City:" [ref=e74]:
+                - generic [ref=e75]: "City:"
+              - cell [ref=e76]:
+                - textbox [ref=e77]
+              - cell "City is required." [ref=e78]:
+                - generic [ref=e79]: City is required.
+            - 'row "State: State is required." [ref=e80]':
+              - cell "State:" [ref=e81]:
+                - generic [ref=e82]: "State:"
+              - cell [ref=e83]:
+                - textbox [ref=e84]
+              - cell "State is required." [ref=e85]:
+                - generic [ref=e86]: State is required.
+            - 'row "Zip Code: Zip Code is required." [ref=e87]':
+              - cell "Zip Code:" [ref=e88]:
+                - generic [ref=e89]: "Zip Code:"
+              - cell [ref=e90]:
+                - textbox [ref=e91]
+              - cell "Zip Code is required." [ref=e92]:
+                - generic [ref=e93]: Zip Code is required.
+            - 'row "Phone #:" [ref=e94]':
+              - 'cell "Phone #:" [ref=e95]':
+                - generic [ref=e96]: "Phone #:"
+              - cell [ref=e97]:
+                - textbox [ref=e98]
+              - cell [ref=e99]
+            - 'row "SSN: Social Security Number is required." [ref=e100]':
+              - cell "SSN:" [ref=e101]:
+                - generic [ref=e102]: "SSN:"
+              - cell [ref=e103]:
+                - textbox [ref=e104]
+              - cell "Social Security Number is required." [ref=e105]:
+                - generic [ref=e106]: Social Security Number is required.
+            - row [ref=e107]:
+              - cell [ref=e108]
+            - 'row "Username: Username is required." [ref=e109]':
+              - cell "Username:" [ref=e110]:
+                - generic [ref=e111]: "Username:"
+              - cell [ref=e112]:
+                - textbox [ref=e113]
+              - cell "Username is required." [ref=e114]:
+                - generic [ref=e115]: Username is required.
+            - 'row "Password: Password is required." [ref=e116]':
+              - cell "Password:" [ref=e117]:
+                - generic [ref=e118]: "Password:"
+              - cell [ref=e119]:
+                - textbox [ref=e120]
+              - cell "Password is required." [ref=e121]:
+                - generic [ref=e122]: Password is required.
+            - 'row "Confirm: Password confirmation is required." [ref=e123]':
+              - cell "Confirm:" [ref=e124]:
+                - generic [ref=e125]: "Confirm:"
+              - cell [ref=e126]:
+                - textbox [ref=e127]
+              - cell "Password confirmation is required." [ref=e128]:
+                - generic [ref=e129]: Password confirmation is required.
+            - row "Register" [ref=e130]:
+              - cell [ref=e131]
+              - cell "Register" [ref=e132]:
+                - button "Register" [ref=e133] [cursor=pointer]
+  - generic [ref=e135]:
+    - list [ref=e136]:
+      - listitem [ref=e137]:
+        - link "Home" [ref=e138] [cursor=pointer]:
+          - /url: index.htm
+        - text: "|"
+      - listitem [ref=e139]:
+        - link "About Us" [ref=e140] [cursor=pointer]:
+          - /url: about.htm
+        - text: "|"
+      - listitem [ref=e141]:
+        - link "Services" [ref=e142] [cursor=pointer]:
+          - /url: services.htm
+        - text: "|"
+      - listitem [ref=e143]:
+        - link "Products" [ref=e144] [cursor=pointer]:
+          - /url: http://www.parasoft.com/jsp/products.jsp
+        - text: "|"
+      - listitem [ref=e145]:
+        - link "Locations" [ref=e146] [cursor=pointer]:
+          - /url: http://www.parasoft.com/jsp/pr/contacts.jsp
+        - text: "|"
+      - listitem [ref=e147]:
+        - link "Forum" [ref=e148] [cursor=pointer]:
+          - /url: http://forums.parasoft.com/
+        - text: "|"
+      - listitem [ref=e149]:
+        - link "Site Map" [ref=e150] [cursor=pointer]:
+          - /url: sitemap.htm
+        - text: "|"
+      - listitem [ref=e151]:
+        - link "Contact Us" [ref=e152] [cursor=pointer]:
+          - /url: contact.htm
+    - paragraph [ref=e153]: © Parasoft. All rights reserved.
+    - list [ref=e154]:
+      - listitem [ref=e155]: "Visit us at:"
+      - listitem [ref=e156]:
+        - link "www.parasoft.com" [ref=e157] [cursor=pointer]:
+          - /url: http://www.parasoft.com/
+```

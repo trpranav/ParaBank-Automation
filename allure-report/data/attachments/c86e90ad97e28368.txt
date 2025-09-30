@@ -1,0 +1,3 @@
+Entering value "sampleuser"
+Entering value "Sample@123"
+Clicking on button Login
