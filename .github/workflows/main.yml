@@ -1,12 +1,18 @@
 name: Manual Playwright Test Run
 
-# This makes it manual (you must click "Run workflow" to start)
+# Trigger manually
 on:
   workflow_dispatch:
 
 jobs:
   run-playwright-tests:
     runs-on: ubuntu-latest
+
+    # Add environment variables from GitHub Secrets
+    env:
+      BASE_URL: ${{ secrets.BASE_URL }}
+      USERNAME: ${{ secrets.USERNAME }}
+      PASSWORD: ${{ secrets.PASSWORD }}
 
     steps:
       - name: Checkout repository
@@ -30,7 +36,7 @@ jobs:
       - name: Run Playwright Tests
         run: npx playwright test
 
-      # (Optional) Upload test report
+      # Upload Playwright report as artifact
       - name: Upload Playwright Report
         if: always()
         uses: actions/upload-artifact@v4
