@@ -10,9 +10,11 @@ jobs:
 
     # Add environment variables from GitHub Secrets
     env:
-      BASE_URL: ${{ secrets.BASE_URL }}
-      USERNAME: ${{ secrets.USERNAME }}
-      PASSWORD: ${{ secrets.PASSWORD }}
+      loginUsername: ${{ secrets.loginUsername }}
+      loginPassword: ${{ secrets.loginPassword }}
+      registerUsername: ${{ secrets.registerUsername }}
+      registerPassword: ${{ secrets.registerPassword }}
+      registerConfirmPassword: ${{ secrets.registerConfirmPassword }}
 
     steps:
       - name: Checkout repository
