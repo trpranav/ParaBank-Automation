@@ -8,15 +8,15 @@ jobs:
   run-playwright-tests:
     runs-on: ubuntu-latest
 
-    # Add environment variables from GitHub Secrets
+    # Environment variables from GitHub Secrets
     env:
-      loginUsername: ${{ secrets.loginUsername }}
-      loginPassword: ${{ secrets.loginPassword }}
-      registerUsername: ${{ secrets.registerUsername }}
-      registerPassword: ${{ secrets.registerPassword }}
-      registerConfirmPassword: ${{ secrets.registerConfirmPassword }}
+      BASE_URL: ${{ secrets.BASE_URL }}
+      USERNAME: ${{ secrets.USERNAME }}
+      PASSWORD: ${{ secrets.PASSWORD }}
+      # Add more secrets here if needed
 
     steps:
+      # Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -26,7 +26,7 @@ jobs:
         with:
           node-version: 18
 
-      # Install dependencies
+      # Install project dependencies
       - name: Install dependencies
         run: npm ci
 
@@ -36,7 +36,7 @@ jobs:
 
       # Run Playwright tests
       - name: Run Playwright Tests
-        run: npx playwright test
+        run: npx playwright test --reporter=html
 
       # Upload Playwright report as artifact
       - name: Upload Playwright Report
